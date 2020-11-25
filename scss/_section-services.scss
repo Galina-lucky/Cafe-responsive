@@ -1,0 +1,23 @@
+.section-services {
+  background-color: #70bfff;
+  color: #ffffff;
+  padding-top: 105px;
+  padding-bottom: 150px;
+
+  &__controls {
+    padding-top: 75px;
+  }
+
+  &__img {
+    margin-left: auto;
+    display: flex;
+  }
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    margin-bottom: 0;
+  } 
+}

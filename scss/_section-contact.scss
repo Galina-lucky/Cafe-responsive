@@ -1,0 +1,86 @@
+.section-contact {
+  background: url(../image/bg-contact.jpg) center center no-repeat;
+  background-size: cover;
+  min-height: 865px;
+  padding-top: 85px;
+  padding-bottom: 115px;
+}
+
+.form-contact {
+  width: 500px;
+  font-size: 0;
+
+  &__field {
+    width: 100%;
+    background-color: #00c4c4;
+    font-size: 0.9375rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.5625;
+    padding: 14px 20px;
+    border: none;
+    border-left: 3px solid transparent; 
+    outline: none;
+  }
+
+  &__field:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__field:focus {
+    border-left: 3px solid #355b82;
+  }
+
+  &__field:hover {
+    background-color: #1de2e2;
+  }
+
+  &__field:active {
+    background-color: #05a2a2;
+  }
+
+  &__field::placeholder {
+    color: #ffffff;
+    font-weight: 300;
+  }
+
+  &__field--large {
+    height: 200px;
+    resize: none;
+  }
+}
+
+.contact {
+  padding-left: 70px;
+
+  &__block:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1,470588;
+  }
+
+  &__lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+}
+
+.link-contact {
+
+  &:hover {
+    color: #161cdc;
+  }
+
+  &:active {
+    color: #06b3b3;
+  }
+
+  &:focus {
+    color: #3906b3;
+  }
+}

@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:after, :before {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html, body {
+	font-family: $font-family-base;
+	font-size: $base-font-size;
+	font-weight: 300;
+	line-height: $line-height;
+	color: $font-color-primary;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+
+/*a {
+	text-decoration: none;
+	color: $font-color-primary;
+}*/

@@ -1,0 +1,85 @@
+.section-blog {
+  background-color: #b07cf7;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  color: #ffffff;
+}
+
+.date {
+  background-color: rgba(38, 38, 38, 0.502);
+  border-radius: 5px;
+  width: 60px;
+  text-align: center;
+  line-height: 1;
+  padding: 3px 9px;
+}
+
+.article-preview {
+  display: inline-block;
+  color: #ffffff;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 42px;
+  font-size: 0;
+  position: relative;
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__date {
+    position: absolute;
+    left: 30px;
+    top:  30px;
+  }
+
+  &__day {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__month {
+  font-size: 1.3125rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+}
+
+  &__info {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    max-height: 150px;
+    padding: 45px 25px 30px 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0));
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+  }
+
+  &__author {
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 300;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    box-shadow: 0px 0px 10px 10px rgb(65, 42, 97);
+  }
+}

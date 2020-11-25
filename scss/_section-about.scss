@@ -1,0 +1,16 @@
+.section-about {
+  background-color: #00aeae;
+  color: #ffffff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &__info {
+    padding-left: 70px;
+    padding-top: 95px;
+  }
+
+  &__img {
+    margin-left: 12px;
+    filter: drop-shadow(-17px 9px 20px rgba(0, 0, 0, 0.3));
+  }
+}
