@@ -10,6 +10,26 @@
   width: 500px;
   font-size: 0;
 
+  @media (min-width: $screen-xs-min) {
+    width: 280px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    width: 490px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    width: 400px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    width: 450px;
+  }
+
+  @media (min-width: $screen-xlg-min) {
+    width: 500px;
+  }
+
   &__field {
     width: 100%;
     background-color: #00c4c4;
@@ -24,7 +44,15 @@
   }
 
   &__field:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 15px;
+    }
   }
 
   &__field:focus {
@@ -51,22 +79,38 @@
 }
 
 .contact {
-  padding-left: 70px;
+  padding-left: 0;
+
+  @media (min-width: $screen-lg-min) {
+    padding-left: 50px;
+  }
+
+  @media (min-width: $screen-xlg-min) {
+    padding-left: 70px;
+  }
 
   &__block:not(:last-child) {
     margin-bottom: 15px;
   }
 
   &__title {
-    font-size: 1.0625rem;
+    font-size: 0.9rem;
     font-weight: 700;
     line-height: 1,470588;
+
+    @media (min-width: $screen-lg-min) {
+      font-size: 1.0625rem;;
+    }
   }
 
   &__lead {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.25;
+
+    @media (min-width: $screen-lg-min) {
+      font-size: 1.25rem;
+    }
   }
 }
 
