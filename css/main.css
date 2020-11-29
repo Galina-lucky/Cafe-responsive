@@ -1274,7 +1274,27 @@ a {
   padding-bottom: 120px;
 }
 .section-gallery__info {
-  margin-bottom: 45px;
+  margin-bottom: 15px;
+}
+@media (min-width: 540px) {
+  .section-gallery__info {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .section-gallery__info {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .section-gallery__info {
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-gallery__info {
+    margin-bottom: 45px;
+  }
 }
 .section-gallery__photos {
   font-size: 0;
