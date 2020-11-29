@@ -7,3 +7,15 @@ $line-height: 1.6875;
 $base-font-size: 16px;
 
 $font-color-primary: $dark-grey;
+
+$screen-xlg-min: 1200px;
+$screen-lg-min: 992px;
+$screen-md-min: 768px;
+$screen-sm-min: 540px;
+$screen-xs-min: 320px;
+
+
+$screen-xlg-max: $screen-xlg-min -1px;
+$screen-lg-max : $screen-lg-min -1px;
+$screen-md-max : $screen-md-min -1px;
+$screen-sm-max : $screen-sm-min -1px;

@@ -5,7 +5,15 @@
   padding-bottom: 150px;
 
   &__controls {
-    padding-top: 75px;
+    padding-top: 0;
+
+    @media (min-width: $screen-lg-min) {
+      padding-top: 55px;
+    }    
+
+    @media (min-width: $screen-xlg-min) {
+      padding-top: 75px;
+    }
   }
 
   &__img {

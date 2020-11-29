@@ -2,7 +2,7 @@
   padding-top: 47px;
   background: url(../image/bg-header.jpg) center center no-repeat;
   background-size: cover;
-  min-height: 1000px;
+  min-height: 100vh;
   position: relative;
 
   &__info {
@@ -10,7 +10,11 @@
   }
 
   &__title {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 3.75rem;
+    }
   }
 }
 

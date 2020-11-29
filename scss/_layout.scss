@@ -1,9 +1,36 @@
+$breakpointsMap: (
+  xs: $screen-xs-min,
+  sm: $screen-sm-min,
+  md: $screen-md-min,
+  lg: $screen-lg-min,
+  xlg: $screen-xlg-min
+);
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  width: 1200px;
+
+  @media (min-width: $screen-xs-min) {
+    width: 310px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    width: 520px;
+  } 
+  
+  @media (min-width: $screen-md-min) {
+    width: 750px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    width: 970px;
+  }
+
+  @media (min-width: $screen-xlg-min) {
+    width: 1170px;
+  }
 }
 
 .row {
@@ -12,7 +39,15 @@
 }
 
 .row + .row {
-  margin-top: 30px;
+  margin-top: 10px;
+
+  @media (min-width: $screen-sm-min) {
+    margin-top: 15px;
+  }  
+
+  @media (min-width: $screen-lg-min) {
+    margin-top: 30px;
+  }
 }
 
 .row:before,
@@ -29,78 +64,27 @@
   float: left;
   padding-left: 15px;
   padding-right: 15px;
+  width: 100%;
   min-height: 1px;
 }
 
-.col-1 {
-  width: 8.3333333%;
+@each $size, $breakpoint in $breakpointsMap {
+  @for $i from 11 through 1 {
+    .col-#{$size}-#{$i} {
+      @media (min-width: $breakpoint) {
+        width: (100% / 12) * $i;
+      }
+    }
+  }
 }
 
-.col-2 {
-  width: 16.6666666%;
-}
 
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.3333333%;
-}
-
-.col-5 {
-  width: 41.6666666%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.3333333%;
-}
-
-.col-8 {
-  width: 66.6666666%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.3333333%;
-}
-
-.col-11 {
-  width: 91.6666666%;
-}
-
-.col-offset-1 {
-  margin-left: 8.3333333%;
-}
-
-.col-offset-2 {
-  margin-left: 16.6666666%;
-}
-
-.col-offset-3 {
-  margin-left: 25%;
-}
-
-.col-offset-4 {
-  margin-left: 33.3333333%;
-}
-
-.col-offset-5 {
-  margin-left: 41.6666666%;
-}
-
-.clearfix:before, .clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
+@for $i from 1 through 11 {
+  @each $size, $breakpoint in $breakpointsMap {
+    .col-offset-#{$size}-#{$i} {
+      @media (min-width: $breakpoint) {
+        margin-left: (100% / 12) * $i;
+      }
+    }
+  }
 }

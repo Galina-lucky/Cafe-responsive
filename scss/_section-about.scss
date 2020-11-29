@@ -5,12 +5,24 @@
   padding-bottom: 70px;
 
   &__info {
+    
+  @media (min-width: $screen-lg-min) {
+      padding-left: 50px;
+      padding-top: 60px;
+    }
+   @media (min-width: $screen-xlg-min) {
     padding-left: 70px;
     padding-top: 95px;
   }
+    
+  }
 
   &__img {
-    margin-left: 12px;
+    margin-left: 0;
     filter: drop-shadow(-17px 9px 20px rgba(0, 0, 0, 0.3));
+
+    @media (min-width: $screen-md-min) {
+      margin-left: 12px;
+    }
   }
 }
