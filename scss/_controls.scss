@@ -42,12 +42,32 @@ a {
   outline: none;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 
+  @media (min-width: $screen-xs-min) {
+    min-width: 120px;
+    font-size: 12px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    min-width: 140px;
+    font-size: 14px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    min-width: 150px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    min-width: 170px;
+    font-size: 20px;
+  }
+
   &--primary {
     text-transform: uppercase;
     background-color: #ff6033;
     color: #ffffff;
 
-    @media (min-width: $screen-xs-min) {
+   /* @media (min-width: $screen-xs-min) {
       min-width: 120px;
       font-size: 12px;
     }
@@ -65,7 +85,7 @@ a {
     @media (min-width: $screen-lg-min) {
       min-width: 170px;
       font-size: 20px;
-    }
+    }*/
 
     &:focus {
       outline: #f50000 solid 3px;
@@ -104,7 +124,7 @@ a {
       color: #ffffff;
     }
 
-    @media (min-width: $screen-xs-min) {
+    /*@media (min-width: $screen-xs-min) {
       min-width: 120px;
       font-size: 12px;
     }
@@ -122,7 +142,7 @@ a {
     @media (min-width: $screen-lg-min) {
       min-width: 170px;
       font-size: 20px;
-    }
+    }*/
   }
 
   &--third {
