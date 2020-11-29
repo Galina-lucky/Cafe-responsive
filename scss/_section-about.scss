@@ -1,8 +1,23 @@
 .section-about {
   background-color: #00aeae;
   color: #ffffff;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $screen-sm-min) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 
   &__info {
     

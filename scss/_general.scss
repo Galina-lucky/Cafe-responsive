@@ -17,7 +17,6 @@
     margin-bottom: 30px;
   }
  
-
   &__lead {
     font-size: 0.75rem;
     line-height: 1.5882352;
@@ -26,24 +25,29 @@
       font-size: 1.0625rem;
     }
 
-
     &:not(:last-child) {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+
+      @media (min-width: $screen-md-min) {
+        margin-bottom: 1rem;
+      }
     }
   }
 
   &__title {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     line-height: 1.3;
 
     @media (min-width: $screen-md-min) {
       font-size: 4rem;
+      margin-bottom: 10px;
     }
 
     @media (min-width: $screen-lg-min) {
       font-size: 5.625rem;
+      margin-bottom: 16px;
     }
   }
 
