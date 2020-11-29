@@ -1632,8 +1632,14 @@ a {
   background: url(../image/bg-contact.jpg) center center no-repeat;
   background-size: cover;
   min-height: 865px;
-  padding-top: 85px;
-  padding-bottom: 115px;
+  padding-top: 90px;
+  padding-bottom: 0;
+}
+@media (min-width: 540px) {
+  .section-contact {
+    padding-top: 85px;
+    padding-bottom: 115px;
+  }
 }
 
 .form-contact {
@@ -1774,18 +1780,38 @@ a {
 }
 
 .copyright {
-  font-size: 1rem;
+  font-size: 11px;
   color: #ffffff;
   font-weight: 300;
   line-height: 1.5625;
 }
+@media (min-width: 768px) {
+  .copyright {
+    font-size: 13px;
+  }
+}
+@media (min-width: 992px) {
+  .copyright {
+    font-size: 1rem;
+  }
+}
 
 .site-author {
-  font-size: 0.9375rem;
+  font-size: 10px;
   color: #ffffff;
   font-weight: 300;
   line-height: 1.666666;
   text-align: right;
+}
+@media (min-width: 768px) {
+  .site-author {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) {
+  .site-author {
+    font-size: 0.9375rem;
+  }
 }
 
 .text-accent {
