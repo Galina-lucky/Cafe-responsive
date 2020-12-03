@@ -1,16 +1,16 @@
 .section-blog {
   background-color: #b07cf7;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   color: #ffffff;
 
   @media (min-width: $screen-sm-min) {
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $screen-md-min) {
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 80px;
   }
 
@@ -81,6 +81,8 @@
   }
 
   &__day {
+    display: inline-block;
+    margin-bottom: 5px;
     font-size: 2rem;
     font-weight: 700;
     line-height: 0.8;

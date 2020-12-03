@@ -12,12 +12,8 @@ $breakpointsMap: (
   margin-right: auto;
   margin-left: auto;
 
-  @media (min-width: $screen-xs-min) {
-    width: 310px;
-  }
-
   @media (min-width: $screen-sm-min) {
-    width: 520px;
+    width: 540px;
   } 
   
   @media (min-width: $screen-md-min) {
@@ -39,15 +35,7 @@ $breakpointsMap: (
 }
 
 .row + .row {
-  margin-top: 10px;
-
-  @media (min-width: $screen-sm-min) {
-    margin-top: 15px;
-  }  
-
-  @media (min-width: $screen-lg-min) {
-    margin-top: 30px;
-  }
+  margin-top: 30px;
 }
 
 .row:before,
@@ -69,7 +57,7 @@ $breakpointsMap: (
 }
 
 @each $size, $breakpoint in $breakpointsMap {
-  @for $i from 11 through 1 {
+  @for $i from 12 through 0 {
     .col-#{$size}-#{$i} {
       @media (min-width: $breakpoint) {
         width: (100% / 12) * $i;

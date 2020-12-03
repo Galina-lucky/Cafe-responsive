@@ -43,49 +43,17 @@ a {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 
   @media (min-width: $screen-xs-min) {
-    min-width: 120px;
-    font-size: 12px;
+    min-width: 100%;
   }
 
   @media (min-width: $screen-sm-min) {
-    min-width: 140px;
-    font-size: 14px;
-  }
-
-  @media (min-width: $screen-md-min) {
-    min-width: 150px;
-    font-size: 16px;
-  }
-
-  @media (min-width: $screen-lg-min) {
     min-width: 170px;
-    font-size: 20px;
   }
 
   &--primary {
     text-transform: uppercase;
     background-color: #ff6033;
     color: #ffffff;
-
-   /* @media (min-width: $screen-xs-min) {
-      min-width: 120px;
-      font-size: 12px;
-    }
-
-    @media (min-width: $screen-sm-min) {
-      min-width: 140px;
-      font-size: 14px;
-    }
-
-    @media (min-width: $screen-md-min) {
-      min-width: 150px;
-      font-size: 16px;
-    }
-
-    @media (min-width: $screen-lg-min) {
-      min-width: 170px;
-      font-size: 20px;
-    }*/
 
     &:focus {
       outline: #f50000 solid 3px;
@@ -123,26 +91,6 @@ a {
       background-color: #306788;
       color: #ffffff;
     }
-
-    /*@media (min-width: $screen-xs-min) {
-      min-width: 120px;
-      font-size: 12px;
-    }
-
-    @media (min-width: $screen-sm-min) {
-      min-width: 140px;
-      font-size: 14px;
-    }
-
-    @media (min-width: $screen-md-min) {
-      min-width: 150px;
-      font-size: 16px;
-    }
-
-    @media (min-width: $screen-lg-min) {
-      min-width: 170px;
-      font-size: 20px;
-    }*/
   }
 
   &--third {
@@ -193,23 +141,17 @@ a {
   align-items: center;
   justify-content: center;
   position: relative;
-  
-  min-height: 100px;
-  width: 350px;
+  min-height: 80px;
+  margin-bottom: 5px;
+/*  width: 350px;*/
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.35;
   white-space: normal;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
 
   &:not(:last-child) {
-    
-    @media (min-width: $screen-sm-min) {
-      margin-bottom: 10px;
-    }
-
-    @media (min-width: $screen-md-min) {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
   }
 
   &:after {
@@ -224,36 +166,41 @@ a {
     background-position: center center;
     background-repeat: no-repeat;
 
+    @media (min-width: $screen-xs-min) {
+      content: none;
+    }
+
     @media (min-width: $screen-sm-min) {
+      content: '';
       width: 55px;
+      background-size: 35px;
     }
 
     @media (min-width: $screen-md-min) {
       width: 101px;
+      background-size: 50px;
     }
+  }
+
+  @media (min-width: $screen-xs-min) {
+    width: 100%;
+    padding: 10px 20px 10px 20px;
   }
 
   @media (min-width: $screen-sm-min) {
     width: 100%;
-    min-height: 58px;
-    font-size: 14px;
+    font-size: 17px;
     padding: 10px 76px 10px 20px;
   }
 
   @media (min-width: $screen-md-min) {
-    min-height: 80px;
-    font-size: 16px;
+    width: 330px;;
     padding: 25px 126px 25px 25px;
-  }
-
-  @media (min-width: $screen-md-min) {
-    width: 330px;
-    min-height: 80px;
-    font-size: 16px;
   }
 
   @media (min-width: $screen-lg-min) {
     width: 350px;
+    min-height: 100px;
     font-size: 20px;
   }
 
@@ -302,5 +249,13 @@ a {
 
   &:hover {
     opacity: 0.7;
+  }
+
+  @media (min-width: $screen-xs-min) {
+    display: none;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    display: block;
   }
 }

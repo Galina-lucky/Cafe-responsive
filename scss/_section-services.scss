@@ -1,8 +1,28 @@
 .section-services {
   background-color: #70bfff;
   color: #ffffff;
-  padding-top: 105px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: $screen-sm-min) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }  
+
+  @media (min-width: $screen-md-min) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $screen-xlg-min) {
+    padding-top: 105px;
+    padding-bottom: 150px;
+  }
 
   &__controls {
     padding-top: 0;
@@ -18,14 +38,33 @@
 
   &__img {
     margin-left: auto;
-    display: flex;
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+      display: flex;
+    }
   }
 
   &__title {
+    display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
     margin-bottom: 0;
+
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+
+    &--xs {
+      display: block;
+      text-align: center;
+      margin-bottom: 40px;
+
+      @media (min-width: $screen-sm-min) {
+        display: none;
+      }
+    }
   } 
 }
