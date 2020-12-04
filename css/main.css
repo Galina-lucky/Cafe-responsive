@@ -1299,10 +1299,10 @@ a {
   height: auto;
 }
 
-/*
 * {
   outline: 1px solid red;
-}*/
+}
+
 .header {
   padding-top: 47px;
   background-color: #f9f9fb;
@@ -1713,7 +1713,7 @@ a {
 
 .form-subscribe__field {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 12px 12px;
   font-size: 0.9375rem;
   font-weight: 300;
