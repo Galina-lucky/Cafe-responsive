@@ -36,18 +36,15 @@
 
 .article-preview {
   display: inline-block;
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 0;
+  text-align: left;
   color: #ffffff;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
-  margin-bottom: 42px;
-  font-size: 0;
-  position: relative;
-
-  @media (min-width: $screen-xs-min) {
-    margin-bottom: 10px;
-  }
 
   @media (min-width: $screen-md-min) {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $screen-lg-min) {
@@ -145,7 +142,7 @@
     margin-bottom: 20px;
 
     @media (min-width: $screen-md-min) {
-      font-size: 1rem;
+      font-size: 1.25rem;
       margin-bottom: 15px;
     }
 
@@ -180,4 +177,8 @@
   &:active {
     box-shadow: 0px 0px 10px 10px rgb(65, 42, 97);
   }
+} 
+
+.wrapper-article {
+  text-align: center;
 }
