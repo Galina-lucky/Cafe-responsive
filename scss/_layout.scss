@@ -49,6 +49,7 @@ $breakpointsMap: (
 }
 
 [class*="col-"] {
+  position: relative;
   float: left;
   padding-left: 15px;
   padding-right: 15px;
@@ -57,20 +58,19 @@ $breakpointsMap: (
 }
 
 @each $size, $breakpoint in $breakpointsMap {
-  @for $i from 12 through 0 {
-    .col-#{$size}-#{$i} {
-      @media (min-width: $breakpoint) {
+  @media (min-width: $breakpoint) {
+    @for $i from 11 through 1 {
+      .col-#{$size}-#{$i} {      
         width: (100% / 12) * $i;
       }
     }
   }
 }
 
-
-@for $i from 1 through 11 {
-  @each $size, $breakpoint in $breakpointsMap {
-    .col-offset-#{$size}-#{$i} {
-      @media (min-width: $breakpoint) {
+@each $size, $breakpoint in $breakpointsMap {
+  @media (min-width: $breakpoint) {
+    @for $i from 11 through 0 {
+    .col-offset-#{$size}-#{$i} {      
         margin-left: (100% / 12) * $i;
       }
     }
