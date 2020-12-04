@@ -1,11 +1,11 @@
 .section-gallery {
   background-color: #ffe92f;
   padding-top: 50px;
-  padding-bottom: 106px;
+  padding-bottom: 50px;
 
   @media (min-width: $screen-sm-min) {
     padding-top: 60px;
-    padding-bottom: 110px;
+    padding-bottom: 75px;
   }
 
   @media (min-width: $screen-md-min) {
@@ -16,6 +16,10 @@
   @media (min-width: $screen-lg-min) {
     padding-top: 100px;
     padding-bottom: 120px;
+  }
+
+  &__row + &__row {
+    margin-top: 0;
   }
 
   &__info {
@@ -40,23 +44,15 @@
 
   &__photos {
     font-size: 0;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 
     @media (min-width: $screen-sm-min) {
-      margin-bottom: 20px;
+      margin-bottom: 7px;
     }
-
-    @media (min-width: $screen-md-min) {
-      margin-bottom: 25px;
-    }  
 
     @media (min-width: $screen-lg-min) {
-      margin-bottom: 35px;
+      margin-bottom: 12px;
     }    
-
-    @media (min-width: $screen-xlg-min) {
-      margin-bottom: 42px;
-    }
   }
 
   &__img {
@@ -67,5 +63,28 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+
+    &--xs {
+      @media (min-width: $screen-xs-min) {
+        max-width: 370px;
+        width: 100%;
+      }
+      
+      @media (min-width: $screen-sm-min) {
+        max-width: 100%;
+      }
+    }
   }
 }
+
+/*.section-gallery__img {
+    display: block;
+    /* max-width: 100%; 
+    max-width: 370px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);*/
