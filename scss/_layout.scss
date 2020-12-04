@@ -70,8 +70,28 @@ $breakpointsMap: (
 @each $size, $breakpoint in $breakpointsMap {
   @media (min-width: $breakpoint) {
     @for $i from 11 through 0 {
-    .col-offset-#{$size}-#{$i} {      
+    .col-#{$size}-offset-#{$i} {      
         margin-left: (100% / 12) * $i;
+      }
+    }
+  }
+}
+
+@each $size, $breakpoint in $breakpointsMap {
+  @media (min-width: $breakpoint) {
+    @for $i from 11 through 1 {
+      .col-#{$size}-push-#{$i} {
+        left: (100% / 12) * $i;
+      }
+    }
+  }
+}
+
+@each $size, $breakpoint in $breakpointsMap {
+  @media (min-width: $breakpoint) {
+    @for $i from 11 through 1 {
+      .col-#{$size}-pull-#{$i} {
+        left: -(100% / 12) * $i;
       }
     }
   }
