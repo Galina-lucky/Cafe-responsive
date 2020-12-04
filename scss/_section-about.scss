@@ -41,3 +41,18 @@
     }
   }
 }
+
+.row-flex {
+  display: block;
+
+  @media (min-width: $screen-md-min) {
+    display: flex;
+  }
+}
+
+.col-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

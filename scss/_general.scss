@@ -30,7 +30,7 @@
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 16px;
-    line-height: 1.3;
+    line-height: 1;
 
     @media (min-width: $screen-md-min) {
       font-size: 4rem;
@@ -52,12 +52,3 @@
   height: auto;
 }
 
-.row-flex {
-  display: flex;
-}
-
-.col-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
