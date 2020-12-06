@@ -65,10 +65,8 @@
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 
     &--xs {
-      @media (min-width: $screen-xs-min) {
-        max-width: 370px;
-        width: 100%;
-      }
+      max-width: 370px;
+      width: 100%;
       
       @media (min-width: $screen-sm-min) {
         max-width: 100%;

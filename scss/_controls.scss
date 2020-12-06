@@ -24,13 +24,15 @@ a {
 }
 
 .btn {
+  position: relative;
 	display: inline-block;
-  min-width: 170px;
+  min-width: 100%;
   padding: 0.9em 1.35em;
   font-size: 1.25rem;
   font-weight: 300; 
   line-height: 1;
   text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   vertical-align: middle;
@@ -42,16 +44,11 @@ a {
   outline: none;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 
-  @media (min-width: $screen-xs-min) {
-    min-width: 100%;
-  }
-
   @media (min-width: $screen-sm-min) {
     min-width: 170px;
   }
 
   &--primary {
-    text-transform: uppercase;
     background-color: #ff6033;
     color: #ffffff;
 
@@ -73,7 +70,6 @@ a {
   }
 
   &--secondary {
-    text-transform: uppercase;
     background-color: #5585a2;
     color: #ffffff;
 
@@ -94,7 +90,6 @@ a {
   }
 
   &--third {
-    text-transform: uppercase;
     background-color: #96b92c;
     color: #ffffff;
 
@@ -115,7 +110,6 @@ a {
   }
 
   &--fourth {
-    text-transform: uppercase;
     background-color: #f72b3f;
     color: #ffffff;
 
@@ -134,17 +128,21 @@ a {
       color: #ffffff;
     }
   }
+
+  &--block {
+    width: 100%;
+  }
 }
 
 .btn-services {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  min-height: 80px;
-  margin-bottom: 5px;
-  font-size: 20px;
+  min-height: 100px;
+  //margin-bottom: 5px;
+  padding: 18px Clamp(78px, calc(25% + 18px), 118px) 18px 18px;
   font-weight: 700;
+  text-transform: inherit;
   line-height: 1.35;
   white-space: normal;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
@@ -153,60 +151,23 @@ a {
     margin-bottom: 20px;
   }
 
+  @media (max-width: $screen-xs-max) {
+    font-size: 17px;
+  }
+
   &:after {
     content: '';
     position: absolute;
     right: 0;
     top: 0;
     display: block;
+    width: Clamp(60px, 25%, 100px);
     height: 100%;
     border-left: 1px solid #9d9d9d;
     background-color: transparent;
     background-position: center center;
     background-repeat: no-repeat;
-
-    @media (min-width: $screen-xs-min) {
-      width: 80px;
-      background-size: 45px;
-    }
-
-    @media (min-width: $screen-md-min) {
-      width: 80px;
-      background-size: 50px;
-    }
-
-    @media (min-width: $screen-lg-min) {
-      width: 90px;
-      background-size: 55px;
-    }
-
-    @media (min-width: $screen-xlg-min) {
-      width: 100px;
-      background-size: 60px;
-    }
-  }
-
-  @media (min-width: $screen-xs-min) {
-    width: 100%;
-    padding: 20px 100px 20px 20px;
-  }
-
-  @media (min-width: $screen-md-min) {
-    width: 330px;
-    padding: 25px 105px 25px 25px;
-    font-size: 18px;
-  }
-
-  @media (min-width: $screen-lg-min) {
-    width: 350px;
-    min-height: 100px;
-    padding: 25px 115px 25px 25px;
-  }
-
-  @media (min-width: $screen-xlg-min) {
-    width: 400px;
-    font-size: 20px;
-    padding: 25px 125px 25px 25px;
+    background-size: 60%;
   }
 
   &--shopping:after {
@@ -252,11 +213,7 @@ a {
     opacity: 0.7;
   }
 
-  @media (min-width: $screen-xs-min) {
+  @media (max-width: $screen-xs-max) {
     display: none;
-  }
-
-  @media (min-width: $screen-sm-min) {
-    display: block;
   }
 }

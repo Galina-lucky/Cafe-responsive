@@ -1,13 +1,8 @@
 .section-services {
   background-color: #70bfff;
   color: #ffffff;
-  padding-top: 75px;
-  padding-bottom: 50px;
-
-  @media (min-width: $screen-sm-min) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }  
+  padding-top: 50px;
+  padding-bottom: 50px; 
 
   @media (min-width: $screen-md-min) {
     padding-top: 70px;
@@ -15,8 +10,8 @@
   }
 
   @media (min-width: $screen-lg-min) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 
   @media (min-width: $screen-xlg-min) {
@@ -25,52 +20,43 @@
   }
 
   &__controls {
-    padding-top: 45px;
-
-    @media (min-width: $screen-md-min) {
-      padding-top: 0;
-    }  
-
     @media (min-width: $screen-lg-min) {
       padding-top: 55px;
     }    
 
     @media (min-width: $screen-xlg-min) {
+      padding-right: 58px;
       padding-top: 75px;
     }
   }
 
-  &__img {
-    margin-left: auto;
-    display: none;
+  &__info {
+    position: relative;
 
     @media (min-width: $screen-md-min) {
-      display: flex;
+      margin-bottom: 0;
+    }
+    
+  }
+
+  &__img {
+    margin-left: auto;
+
+    @media (max-width: $screen-sm-max) {
+      display: none;
     }
   }
 
   &__title {
-    display: block;
-    position: absolute;
-    transform: translateY(-50%);
-    margin-bottom: 0;
-
-    @media (min-width: $screen-xs-min) {
-      right: 20%;
-    }
-
-    @media (min-width: $screen-sm-min) {
-      right: 25%;
-    }
-
     @media (min-width: $screen-md-min) {
+      position: absolute;
       top: 50%;
-      padding-left: 25%;
+      transform: translateY(-50%);
       right: 0;
     }
 
-    @media (min-width: $screen-xlg-min) {
-      padding-left: 0;
-    }        
+    @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+      padding-left: 60px;
+    }       
   } 
 }
