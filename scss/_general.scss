@@ -2,12 +2,24 @@
   position: relative;
 }
 
-.wr-btn {
+.text-centr {
   text-align: center;
 }
 
+.logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  &--small {
+    display: block;
+    width: 64px;
+    height: 26px;
+  }
+}
+
 .info {
-  margin-bottom: 30px;
+  margin-bottom: 45px;
  
   &__lead {
     font-size: 1rem;
@@ -40,10 +52,6 @@
       font-size: 5.625rem;
     }
   }
-
-  &--center {
-    text-align: center;
-  }
 }
 
 .img-responsive {
@@ -54,4 +62,13 @@
 
 /** {
   outline: 1px solid red;
+}*/
+
+/*.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
 }*/

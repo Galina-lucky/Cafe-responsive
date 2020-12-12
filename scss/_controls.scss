@@ -132,6 +132,11 @@ a {
   &--block {
     width: 100%;
   }
+
+  &--center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .btn-services {
@@ -139,8 +144,7 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 100px;
-  //margin-bottom: 5px;
-  padding: 18px Clamp(78px, calc(25% + 18px), 118px) 18px 18px;
+  padding: 18px clamp(78px, calc(25% + 18px), 118px) 18px 18px;
   font-weight: 700;
   text-transform: inherit;
   line-height: 1.35;
@@ -161,7 +165,7 @@ a {
     right: 0;
     top: 0;
     display: block;
-    width: Clamp(60px, 25%, 100px);
+    width: clamp(60px, 25%, 100px);
     height: 100%;
     border-left: 1px solid #9d9d9d;
     background-color: transparent;
@@ -200,7 +204,7 @@ a {
   }
 }
 
-.scroll {
+.move-to {
   display: block;
   height: 40px;
   width: 24px;
@@ -209,8 +213,18 @@ a {
   left: 50%;
   margin-left: -12px;
 
-  &:hover {
+  &:focus {
     opacity: 0.7;
+    outline: 1px solid gray;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.8;
+    outline: 1px solid #ff6033;
   }
 
   @media (max-width: $screen-xs-max) {

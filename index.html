@@ -15,7 +15,7 @@
     <body>
         <header class="header">
             <div class="container">
-                <!-- <nav class="nav">
+                <nav class="nav">
                     <a class="link-logo" href="#">
                         <img class="logo" src="image/logo.svg" alt="logo">
                     </a>
@@ -49,7 +49,7 @@
                             </a>
                         </li>
                     </ul>
-                </nav> -->
+                </nav>
                 <div class="row">
                     <div class="col-sm-9 col-md-6 col-lg-5 col-xlg-4 ">
                         <div class="info header__info">
@@ -65,7 +65,7 @@
                         </a>
                     </div>
                 </div>
-                <a class="scroll" href="#about">
+                <a class="move-to" href="#about">
                     <img alt="" src="image/scroll.png">
                 </a>
             </div>
@@ -127,7 +127,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-xlg-6 col-xlg-offset-3">
-                            <div class="info info--center section-gallery__info">
+                            <div class="section-gallery__info info info--center text-centr">
                                 <h2 class="info__title">
                                     Gallery
                                 </h2>
@@ -161,16 +161,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row section-gallery__row">
-                        <div class="col-lg-4 col-lg-offset-4 col-xlg-2 col-xlg-offset-5">
-                        <div class="wr-btn">
-                            <a class="btn btn--secondary" href="#">
-                                View more
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                    
+                    <a class="btn btn--secondary btn--center" href="#">
+                        View more
+                    </a>                    
                 </div>
             </section>
             <section class="section-subscribe" id="subscribe">
@@ -206,7 +199,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-xlg-6 col-xlg-offset-3">
-                            <div class="info info--center">
+                            <div class="info text-centr">
                                 <h2 class="info__title">
                                     Blog
                                 </h2>
@@ -275,15 +268,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-2 col-md-offset-5">
-                            <div class="wr-btn">
-                             <a class="btn btn--fourth" href="#">
-                                View more
-                            </a> 
-                        </div>
-                    </div>
-                    </div>
+                    <a class="btn btn--fourth btn--center" href="#">
+                        View more
+                    </a> 
                 </div>
             </section>
            <section class="section-contact" id="contact">
@@ -332,25 +319,23 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="bottom-footer">
-                <div class="container">
-                    <div class="wrapper--flex">
-                        <p class="copyright">
-                            © 2015 Company. All right reserved.
-                        </p>
-                        <a class="logo bottom-footer__logo" href="#">
-                            <img alt="logotype" class="logo--small" src="image/logo-small.svg">
+            <div class="container">
+                <div class="footer__group">
+                    <a class="logo footer__logo" href="#">
+                        <img alt="logotype" class="logo--small" src="image/logo-small.svg">
+                    </a>
+                    <p class="footer__site-author">
+                        Made with
+                        <a class="footer__link-author" href="#">
+                            love
                         </a>
-                        <p class="site-author">
-                            Made with
-                            <span class="text-accent">
-                                love
-                            </span>
-                            by Auskteez
-                        </p>
-                    </div>
+                        by Auskteez
+                    </p>
+                    <p class="footer__copyright">
+                        © 2015 Company. All right reserved.
+                    </p>
                 </div>
-            </div>
+            </div>          
         </footer>
     </body>
 </html>

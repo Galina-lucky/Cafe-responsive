@@ -12,6 +12,7 @@
 
   &__info {
     margin-top: 140px;
+    margin-bottom: 30px;
 
     @media (min-width: $screen-sm-min) {
       margin-top: 255px;
@@ -38,11 +39,7 @@
   padding-right: 15px;
 }
 
-.logo {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 
 .menu {
   display: flex;
