@@ -227,7 +227,7 @@ a {
     outline: 1px solid #ff6033;
   }
 
-  @media (max-width: $screen-xs-max) {
+  @media (max-width: $screen-sm-max) {
     display: none;
   }
 }
