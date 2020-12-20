@@ -2,11 +2,11 @@
   padding-top: 47px;
   padding-bottom: 50px;
   background-color: #f9f9fb;
-  background-size: cover;
   position: relative;
 
   @media (min-width: $screen-md-min) {
     background: url(../image/bg-header.jpg) center center no-repeat;
+    background-size: cover;
     min-height: 100vh;
   }
 

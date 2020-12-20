@@ -1263,6 +1263,7 @@ a {
     clear: both;
 }*/
 .nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1329,32 +1330,32 @@ a {
 }
 @media (max-width: 767px) {
   .menu {
-    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
     margin-right: 0;
-  }
-}
-.menu--show {
-  min-height: 0;
-  -webkit-transition: max-height 0.5s ease;
-  transition: max-height 0.5s ease;
-}
-@media (max-width: 767px) {
-  .menu--show {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
     margin-top: 5px;
-    background-color: rgba(255, 96, 51, 0.3);
+    background-color: #ff6033;
     border-radius: 10px;
-    max-height: 300px;
-    -webkit-transition: max-height 0.5s ease;
-    transition: max-height 0.5s ease;
+    opacity: 0;
+    -webkit-transform: translateY(calc(-100% - 72px));
+            transform: translateY(calc(-100% - 72px));
+    -webkit-transition: opacity ease 0.5s, -webkit-transform ease 0.5s;
+    transition: opacity ease 0.5s, -webkit-transform ease 0.5s;
+    transition: opacity ease 0.5s, transform ease 0.5s;
+    transition: opacity ease 0.5s, transform ease 0.5s, -webkit-transform ease 0.5s;
+    z-index: 2;
   }
+}
+.menu--show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 @media (max-width: 767px) {
   .menu__item:not(:last-child) {
@@ -1462,12 +1463,12 @@ a {
   padding-top: 47px;
   padding-bottom: 50px;
   background-color: #f9f9fb;
-  background-size: cover;
   position: relative;
 }
 @media (min-width: 768px) {
   .header {
     background: url(../image/bg-header.jpg) center center no-repeat;
+    background-size: cover;
     min-height: 100vh;
   }
 }
